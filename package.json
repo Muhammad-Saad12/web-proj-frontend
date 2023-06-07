@@ -1,4 +1,5 @@
 {
+  "homepage": "http://Muhammad-Saad12.github.io/web-proj-frontend",
   "name": "frontend",
   "version": "0.1.0",
   "proxy": "http://localhost:3001",
@@ -29,6 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!axios)/\"",
     "eject": "react-scripts eject"
@@ -52,6 +55,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5"
+    "@testing-library/jest-dom": "^5.16.5",
+    "gh-pages": "^5.0.0"
   }
 }
